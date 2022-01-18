@@ -1,7 +1,7 @@
 @extends('layout.header')
 @section('container')
 <div class="container mt-5">
-
+ 
     <table class="table">
       <thead>
         <tr>
@@ -25,11 +25,10 @@
       <td>{{$siswa['alamat']}}</td>
       <td ><a href={{"del/".$siswa['id']}} class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Hapus</a>
       <a href={{"update/".$siswa['id']}} class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Edit</a></td>
+      
     </tr>
     @endforeach
   </tbody>
     </table>
-    
-    
 </div>
 @endsection

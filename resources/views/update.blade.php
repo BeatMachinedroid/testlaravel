@@ -62,10 +62,11 @@
                             
                                     <!--/span-->
                                 
-                            </div>
+                            
                             <div class="form-actions">
                                 <input type="submit" name="submit" class="btn btn-success" value="update"> 
                                 <a href="dashboard.php" class="btn btn-inverse">Cancel</a>
+                            </div>
                             </div>
                         </form>
                     </div>
