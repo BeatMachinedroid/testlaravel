@@ -33,7 +33,6 @@ class UserController extends Controller
     }
     function update(Request $req)
     {
-        
         $data=user::find($req->id);
         $data->nama=$req->nama;
         $data->gender=$req->gender;
