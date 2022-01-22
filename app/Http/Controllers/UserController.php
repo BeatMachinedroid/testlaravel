@@ -1,10 +1,7 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Models\user;
-
 class UserController extends Controller
 {
     function show()
@@ -15,17 +12,13 @@ class UserController extends Controller
 
     function adddata(Request $req)
         {
-            
             $user = new user;
-            
-
             $user->nama=$req->nama;
             $user->gender=$req->gender;
             $user->email=$req->email;
             $user->alamat=$req->alamat;
             $user->save();
             return redirect('/');
-
         }
     function delete($id)
     {
@@ -33,13 +26,11 @@ class UserController extends Controller
         $data->delete();
         return redirect('/');
     }
-
     function showUp($id)
     {
         $data=user::find($id);
         return view('update',['data'=>$data]);
     }
-
     function update(Request $req)
     {
         
